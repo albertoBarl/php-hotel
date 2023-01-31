@@ -65,13 +65,7 @@ $hotels = [
         <tr>
         <th class="text-success"><?php echo $hotel['name']?></th>
         <td><?php echo $hotel['description']?></td>
-        <td>
-        <?php if($hotel['parking'] == 1){
-            echo "Si";
-            }else{
-            echo "No";
-        }?>
-        </td>
+        <td><?php echo $hotel['parking']  ? "Si" : "No"?></td>
         <td><?php echo $hotel['vote']?></td>
         <td><?php echo $hotel['distance_to_center']?> km</td>
         </tr>
